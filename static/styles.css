@@ -1,0 +1,211 @@
+/* Define the font family */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #181716;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.centrado {
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh; /* Opcional: ajusta la altura según tus necesidades */
+    text-align: center;
+    /* Centrar el texto horizontalmente */
+    color: #ffffff;
+    letter-spacing: normal;
+}
+
+.center-tex{
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.scrollable-content {
+    width: 100%;
+    height: 400px;
+    background-color: #1D1E22;
+    overflow-y: scroll;
+    height: 100vh;
+    color: #cccccc;
+}
+
+.second-row {
+    max-height: calc(100vh - 329px);
+}
+
+.center-vertically {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+    height: 100px;
+    font-family: "Work Sans", sans-serif;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: normal;
+    color: #ffffff;
+    background-color: #181716;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    font-family: "Work Sans", sans-serif;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: normal;
+    color: #ffffff;
+    background-color: #181716;
+
+
+}
+
+.greenButton {
+    background-color: green;
+    color: white;
+    /* You can also set the text color to white for better contrast */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adding a smooth transition */
+    line-height: 40px;
+    border-radius: 50%; /* Hacerlo redondo */
+    border: none;
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+.greenButton:hover {
+  background-color: darkgreen; /* Change the background color on hover */
+}
+
+.redButton {
+    background-color: red;
+    color: white;
+    /* You can also set the text color to white for better contrast */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adding a smooth transition */
+    line-height: 40px;
+    border-radius: 50%; /* Hacerlo redondo */
+    border: none;
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+.redButton:hover {
+  background-color: darkred; /* Change the background color on hover */
+}
+
+.grayButton {
+    background-color: gray;
+    color: white;
+    /* You can also set the text color to white for better contrast */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adding a smooth transition */
+    line-height: 40px;
+    border-radius: 50%; /* Hacerlo redondo */
+    border: none;
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+.grayButton:hover {
+  background-color: darkgray; /* Change the background color on hover */
+}
+
+.blueButton {
+    background-color: blue;
+    color: white;
+    /* You can also set the text color to white for better contrast */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adding a smooth transition */
+    line-height: 40px;
+    border-radius: 50%; /* Hacerlo redondo */
+    border: none;
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+.blueButton:hover {
+  background-color: darkblue; /* Change the background color on hover */
+}
+
+
+#botonFlotante {
+    z-index: 999;
+    width: 40px; /* Diámetro para hacerlo redondo */
+    height: 40px; /* Diámetro para hacerlo redondo */
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%; /* Hacerlo redondo */
+    position: absolute;
+    bottom: 250px; /* Ajusta la distancia desde la parte inferior */
+    right: 50px; /* Ajusta la distancia desde la derecha */
+    cursor: pointer;
+    border: none;
+    outline: none; /* Elimina el borde de enfoque */
+    transition: background-color 0.3s;
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #181716; /* Background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9A8288; /* Color of the thumb/handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FFD700; /* Color of the thumb/handle on hover */
+}
+
+.link {
+    position: relative;
+    /*display: block;*/
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+/* Add this to your styles.css */
+.active-link {
+    background-color: #FFD700;
+    color: black;
+    text-align: right;
+    font-weight: bolder;
+}
+
+
+

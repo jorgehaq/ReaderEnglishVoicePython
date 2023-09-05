@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Reading Subtitle Translator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <!link rel="stylesheet" href="../static/styles.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body>
+  <div class="row">
+    <div class="header"><br>
+      <h1 class="centrado">Mr. Robot</h1>
+      <p class="centrado">File subtitles.</p>
+    </div>     
+  </div>
+  <div class="row">
+    <div class="scrollable-content second-row centrado" id="left-div">
+      <p id="main-reading">{{ content }}</p>      
+    </div>
+    <div class="scrollable-content second-row centrado" id="right-div">
+      <p id='translate-reading' style="margin-top: 16px;"></p>
+    </div>
+  </div>
+  <div class="options center-vertically">
+    <div class="centrado">
+      <button id="decrease-font-size" class="blueButton" title="Decrease font size">A-</button>&nbsp;
+      <button id="increase-font-size" class="blueButton" title="Increase font size">A+</button>&nbsp;&nbsp;&nbsp;&nbsp;|
+      &nbsp;&nbsp;
+      <button id="normal-button" class="grayButton" title="Regular speed reading">Normal</button>&nbsp;
+      <button id="slow-button" class="blueButton" title="Slow speed reading">Slow</button>&nbsp;
+      <button id="super-slow-button" class="blueButton" title="Super slow speed reading">Super Slow</button>&nbsp;&nbsp;&nbsp;&nbsp;|
+      &nbsp;&nbsp;
+      <button id="play-button" class="greenButton" title="Reading">Start</button>&nbsp;
+      <button id="pause-button" class="blueButton">Pause</button>
+    </div>
+  </div>
+  <div class="footer center-vertically">
+    <p class="centrado">Reading traslater script tool - jorgehaq@gmail.com - 2023 </p>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
